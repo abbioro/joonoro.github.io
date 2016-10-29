@@ -1,3 +1,8 @@
+/* don't shift the contents of the page when the scrollbar appears */
+html {
+    overflow-y: scroll;
+}
+
 body {
     font-family: 'Source Serif Pro', serif;
     margin: 60px auto;
@@ -18,7 +23,7 @@ a:hover {
 }
 
 .default-heading, .menu-container {
-    display:inline-block;
+    display: inline-block;
     font-size: 1.4em;
 }
 
@@ -77,4 +82,19 @@ h1 {
 
 h1, h2, h3 {
     font-family: 'Source Serif Pro', serif;
+}
+
+.container .date, .title {
+    font-size: 1.2em;
+}
+
+.date {
+    text-align: right;
+    padding-right: 2em;
+    float: left;
+    width: 7em;
+}
+
+.title {
+    display: inline;
 }

@@ -29,9 +29,11 @@ set_title() {
 # Add an index entry for a filename (first arg).
 add_index_entry() {
     noext="$(dirname $filename)/$(basename $filename .html)"
-    # <pre> tag lets us use the tab char to align the date and title.
-    echo "<li><a href=\"/$noext\"><pre>$(get_date $1)	$(get_title $1)</pre></a></li>" \
+    echo "<div class=\"container\">" >> index.html
+    echo "<div class=\"date\">$(get_date $1)</div>" >> index.html
+    echo "<div class=\"title\"><a href=\"$filename\">$(get_title $1)</a></div>" \
 	 >> index.html
+    echo "</div>" >> index.html
 }
 
 # Generate a page for a post. Also appends a link to the index.
