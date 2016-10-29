@@ -85,7 +85,11 @@ h1, h2, h3 {
 }
 
 /* Index entries */
-.index-entry .date, .title {
+.index-entry {
+    padding-bottom: 1em;
+}
+
+.index-entry .date, .index-entry .title {
     font-size: 1.2em;
 }
 
