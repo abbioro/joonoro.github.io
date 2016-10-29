@@ -1,0 +1,80 @@
+body {
+    font-family: 'Source Serif Pro', serif;
+    margin: 60px auto;
+    width: 70%;
+}
+
+ul {
+    list-style: none;
+}
+
+/* decoration only affects the underline */
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.default-heading, .menu-container {
+    display:inline-block;
+    font-size: 1.4em;
+}
+
+.menu-container {
+    float: right;
+}
+
+.container a {
+    /* color: blue; */
+    color: #3333ff;
+}
+
+.container li {
+    display: inline;
+    margin: 0.4em;
+    margin-left: 0;
+}
+
+/* p.s. the reason your page shifts is the scrollbar appearing */
+.container p, .container ul {
+    margin-top: 0em;
+}
+
+.footer {
+    margin-top: 3em;
+}
+
+.footer ul {
+    clear: left;
+    padding-left: 0;
+}
+
+.contents {
+    font-weight: 400;
+    font-style: normal;
+}
+
+.contents ul {
+    margin-top: 3em;
+}
+
+pre {
+    /* background-color: #eaeaea; */
+    background-color: #eaeaff;
+    padding: .5em;
+}
+
+.contents pre {
+    /* font-size: 0.8em; */
+    padding-right: 0px;
+}
+
+h1 {
+    margin-top: 1.3em;
+}
+
+h1, h2, h3 {
+    font-family: 'Source Serif Pro', serif;
+}
