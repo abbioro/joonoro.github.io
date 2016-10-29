@@ -28,7 +28,8 @@ set_title() {
 
 # Add an index entry for a filename (first arg).
 add_index_entry() {
-    noext="$(dirname $filename)/$(basename $filename .html)"
+    # Github Pages has ignoring extensions built-in
+    noext="$(dirname $filename)/$(basename $filename .html)/"
     echo "<div class=\"index-entry\">" >> index.html
     echo "<div class=\"date\">$(get_date $1)</div>" >> index.html
     echo "<div class=\"title\"><a href=\"$noext\">$(get_title $1)</a></div>" \
