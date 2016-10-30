@@ -54,12 +54,10 @@ generate_blog() {
     # Only do subdirectories, top-level ones are done
     # manually. Globstar gives us the files in chronological order,
     # but we want them in the opposite order so reverse with ls.
-    echo "<ul>" >> index.html
     for post in $(ls -r **/*/*.md); do
 	generate_page "$post"
 	add_index_entry "$post"
     done
-    echo "</ul>" >> index.html
     cat static/footer.html >> index.html
     set_title index.html "Joonatan's Blog"
     generate_page "about.md"

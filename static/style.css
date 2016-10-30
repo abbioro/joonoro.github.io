@@ -6,7 +6,7 @@ html {
 body {
     font-family: 'Source Serif Pro', serif;
     margin: 60px auto;
-    width: 70%;
+    width: 60%;
 }
 
 ul {
@@ -47,10 +47,6 @@ a:hover {
     margin-top: 0em;
 }
 
-.footer {
-    margin-top: 3em;
-}
-
 .footer ul {
     clear: left;
     padding-left: 0;
@@ -59,6 +55,9 @@ a:hover {
 .contents {
     font-weight: 400;
     font-style: normal;
+    margin-top: 3em;
+    /* margin - entry padding */
+    margin-bottom: 3em;
 }
 
 .contents ul {
@@ -76,17 +75,13 @@ pre {
     padding-right: 0px;
 }
 
-h1 {
-    margin-top: 1.3em;
-}
-
 h1, h2, h3 {
     font-family: 'Source Serif Pro', serif;
 }
 
 /* Index entries */
 .index-entry {
-    padding-bottom: 1em;
+    margin-bottom: 1em;
 }
 
 .index-entry .date, .index-entry .title {
