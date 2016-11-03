@@ -5,8 +5,9 @@ html {
 
 body {
     font-family: 'Source Serif Pro', serif;
-    margin: 60px auto;
-    width: 60%;
+    max-width: 680px;
+    margin: 48px auto;
+    padding: 0 40px;
 }
 
 ul {
@@ -14,11 +15,11 @@ ul {
 }
 
 /* decoration only affects the underline */
-a {
+.container a {
     text-decoration: none;
 }
 
-a:hover {
+.container a:hover {
     text-decoration: underline;
 }
 
@@ -42,7 +43,6 @@ a:hover {
     margin-left: 0;
 }
 
-/* p.s. the reason your page shifts is the scrollbar appearing */
 .container p, .container ul {
     margin-top: 0em;
 }
@@ -70,11 +70,6 @@ pre {
     padding: .5em;
 }
 
-.contents pre {
-    /* font-size: 0.8em; */
-    padding-right: 0px;
-}
-
 h1, h2, h3 {
     font-family: 'Source Serif Pro', serif;
 }
@@ -97,4 +92,12 @@ h1, h2, h3 {
 
 .index-entry .title {
     display: inline;
+}
+
+.index-entry a {
+    text-decoration: none;
+}
+
+.index-entry a:hover {
+    text-decoration: underline;
 }
