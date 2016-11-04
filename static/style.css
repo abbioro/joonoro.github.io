@@ -5,6 +5,7 @@ html {
 
 body {
     font-family: "Georgia", serif;
+    line-height: 1.35em;
     max-width: 680px;
     margin: 48px auto;
     padding: 0 40px;
