@@ -9,10 +9,16 @@ body {
     max-width: 680px;
     margin: 48px auto;
     padding: 0 40px;
+    background-color: #eee;
 }
 
 ul {
     list-style: none;
+}
+
+.container {
+    background-color: #fff;
+    padding: 1em;
 }
 
 /* decoration only affects the underline */
@@ -34,7 +40,7 @@ ul {
 }
 
 .container a {
-    color: #3333ff;
+    color: #773dff;
 }
 
 .container li {
@@ -45,16 +51,20 @@ ul {
 
 .container p, .container ul {
     margin-top: 0em;
+    padding-left: 0;
 }
 
 .footer ul {
     clear: left;
     padding-left: 0;
+    margin-bottom: 0;
 }
 
 .contents {
     margin-top: 3em;
     margin-bottom: 3em;
+    background-color: #fff;
+    padding: 2em;
 }
 
 .contents ul {
@@ -68,7 +78,7 @@ pre {
 
 /* Index entries */
 .index-entry {
-    margin-bottom: 1em;
+    padding: 0.2em;
 }
 
 .index-entry .date, .index-entry .title {
