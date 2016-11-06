@@ -44,7 +44,7 @@ generate_page() {
     cat static/header.html > $filename
     $MARKDOWN $1 >> $filename
     cat static/footer.html >> $filename
-    set_title $filename "$(get_title $1) | Joonatan's Blog"
+    set_title $filename "$(get_title $1) | Joonatan O'Rourke"
 }
 
 # Generate the blog. The index is generated as it generates the pages
@@ -59,7 +59,7 @@ generate_blog() {
 	add_index_entry "$post"
     done
     cat static/footer.html >> index.html
-    set_title index.html "Joonatan's Blog"
+    set_title index.html "Joonatan O'Rourke"
     generate_page "about.md"
 }
 
