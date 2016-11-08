@@ -41,17 +41,6 @@ body {
     float: right;
 }
 
-@media only screen and (max-width: 500px) {
-    .container .nav {
-        display: inline;
-        float: none;
-        font-size: 18px;
-    }
-    .container .title {
-        margin-bottom: 10px;
-    }
-}
-
 /* Contents */
 .contents {
     margin: 48px auto;
@@ -76,10 +65,6 @@ body {
     padding: 0.2em;
 }
 
-.index-entry .date, .index-entry .title {
-    font-size: 1.2em;
-}
-
 .index-entry .date {
     text-align: right;
     padding-right: 2em;
@@ -97,4 +82,23 @@ body {
 
 .index-entry a:hover {
     text-decoration: underline;
+}
+
+/* Responsive */
+@media only screen and (max-width: 500px) {
+    .container .nav {
+        display: inline;
+        float: none;
+        font-size: 18px;
+    }
+    .container .title {
+        margin-bottom: 10px;
+    }
+    .index-entry .date {
+        float: none;
+        text-align: left;
+    }
+    .index-entry {
+        margin-bottom: 1em;
+    }
 }

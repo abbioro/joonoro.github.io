@@ -33,7 +33,7 @@ add_index_entry() {
     echo "<div class=\"index-entry\">" >> index.html
     echo "<div class=\"date\">$(get_date $1)</div>" >> index.html
     echo "<div class=\"title\"><a href=\"$noext\">$(get_title $1)</a></div>" \
-	 >> index.html
+         >> index.html
     echo "</div>" >> index.html
 }
 
@@ -55,8 +55,8 @@ generate_blog() {
     # manually. Globstar gives us the files in chronological order,
     # but we want them in the opposite order so reverse with ls.
     for post in $(ls -r **/*/*.md); do
-	generate_page "$post"
-	add_index_entry "$post"
+        generate_page "$post"
+        add_index_entry "$post"
     done
     cat static/footer.html >> index.html
     set_title index.html "Joonatan O'Rourke"
