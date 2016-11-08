@@ -9,16 +9,10 @@ body {
     max-width: 680px;
     margin: 48px auto;
     padding: 0 40px;
-    background-color: #eee;
 }
 
 ul {
     list-style: none;
-}
-
-.container {
-    background-color: #fff;
-    padding: 1em;
 }
 
 /* decoration only affects the underline */
@@ -63,8 +57,6 @@ ul {
 .contents {
     margin-top: 3em;
     margin-bottom: 3em;
-    background-color: #fff;
-    padding: 2em;
 }
 
 .contents ul {
