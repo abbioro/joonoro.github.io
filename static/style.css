@@ -1,40 +1,20 @@
-/* don't shift the contents of the page when the scrollbar appears */
 html {
     overflow-y: scroll;
 }
 
 body {
-    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-    line-height: 1.4em;
     max-width: 680px;
     margin: 48px auto;
-    padding: 0 40px;
+    padding: 0 1em;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    line-height: 1.4em;
 }
 
-ul {
+/* Container */
+.container ul {
     list-style: none;
-}
-
-/* decoration only affects the underline */
-.container a {
-    text-decoration: none;
-}
-
-.container a:hover {
-    text-decoration: underline;
-}
-
-.default-heading, .menu-container {
-    display: inline-block;
-    font-size: 1.4em;
-}
-
-.menu-container {
-    float: right;
-}
-
-.container a {
-    color: #773dff;
+    margin-top: 0em;
+    padding-left: 0;
 }
 
 .container li {
@@ -43,29 +23,37 @@ ul {
     margin-left: 0;
 }
 
-.container p, .container ul {
-    margin-top: 0em;
-    padding-left: 0;
+.container a {
+    text-decoration: none;
+    color: #773dff;
 }
 
-.footer ul {
-    clear: left;
-    padding-left: 0;
-    margin-bottom: 0;
+.container a:hover {
+    text-decoration: underline;
 }
 
+.container .title, .container .nav {
+    display: inline-block;
+    font-size: 22px;
+}
+
+.container .nav {
+    float: right;
+}
+
+/* Contents */
 .contents {
-    margin-top: 3em;
-    margin-bottom: 3em;
+    margin: 48px auto;
 }
 
-.contents ul {
-    margin-top: 3em;
-}
-
-pre {
+.contents pre {
     background-color: #eaeaff;
     padding: .5em;
+}
+
+.contents code {
+    background-color: #eaeaff;
+    padding: 2px;
 }
 
 /* Index entries */
