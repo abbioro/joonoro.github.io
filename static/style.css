@@ -7,8 +7,8 @@ body {
     margin: 48px auto;
     padding: 0 1em;
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-    line-height: 1.4em;
 }
+
 
 /* Container */
 .container ul {
@@ -41,9 +41,21 @@ body {
     float: right;
 }
 
+@media only screen and (max-width: 500px) {
+    .container .nav {
+        display: inline;
+        float: none;
+        font-size: 18px;
+    }
+}
+
 /* Contents */
 .contents {
     margin: 48px auto;
+}
+
+.contents p, .contents li {
+    line-height: 1.4em;
 }
 
 .contents pre {
