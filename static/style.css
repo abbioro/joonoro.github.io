@@ -25,13 +25,13 @@ body {
     font-family: monospace;
 }
 
-.footer, .footer a {
+footer, footer a {
     color: #666;
     font-size: 14px;
     text-decoration: none;
     line-height: 1.5em;
 }
 
-.footer a:hover {
+footer a:hover {
     text-decoration: underline;
 }
