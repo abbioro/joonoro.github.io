@@ -31,9 +31,8 @@ add_index_entry() {
     # Github Pages has ignoring extensions built-in
     noext="$(dirname $filename)/$(basename $filename .html)"
     echo "<div class=\"index-entry\">" >> index.html
-    echo "<div class=\"date\">$(get_date $1)</div>" >> index.html
-    echo "<div class=\"title\"><a href=\"$noext\">$(get_title $1)</a></div>" \
-         >> index.html
+    echo "<span>$(get_date $1)</span> -" >> index.html
+    echo "<a href=\"$noext\">$(get_title $1)</a>" >> index.html
     echo "</div>" >> index.html
 }
 
@@ -44,13 +43,16 @@ generate_page() {
     cat static/header.html > $filename
     $MARKDOWN $1 >> $filename
     cat static/footer.html >> $filename
-    set_title $filename "$(get_title $1) | Joonatan O'Rourke"
+    set_title $filename "$(get_title $1)"
 }
 
 # Generate the blog. The index is generated as it generates the pages
 # for individual posts.
 generate_blog() {
     cat static/header.html > index.html
+    echo "<div class=\"about\">" >> index.html
+    $MARKDOWN "about.md" >> index.html
+    echo "</div><hr>" >> index.html
     # Only do subdirectories, top-level ones are done
     # manually. Globstar gives us the files in chronological order,
     # but we want them in the opposite order so reverse with ls.
@@ -60,7 +62,6 @@ generate_blog() {
     done
     cat static/footer.html >> index.html
     set_title index.html "Joonatan O'Rourke"
-    generate_page "about.md"
 }
 
 generate_blog
