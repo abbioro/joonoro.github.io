@@ -4,6 +4,7 @@ build:
 	./blog.sh
 
 serve:
+	echo "Starting server at http://127.0.0.1:8000/"
 	python2 -m SimpleHTTPServer
 
 clean:
